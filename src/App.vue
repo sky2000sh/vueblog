@@ -17,24 +17,24 @@
     </div>
   </nav>
 
-  <div class="container mt-4">
-    <h5>Vue 개발자의 블로그입니다.</h5>
-    <p> - Vue로 만들어보는 블로그입니다! - </p>
-  </div>
+  <router-link to="/hometitle">홈베너</router-link>
+  <br>
+  <router-link to="/list">리스트페이지</router-link>
 
-  <List :blogData="blogData"/>
+  <!-- <List :blogData="blogData"/> -->
+  <router-view :blogData="blogData"></router-view>
 
 </template>
 
 <script>
-import List from './components/List.vue'
+// import List from './components/List.vue'
 import blog from './assets/blog'
 
 export default {
   name: 'App',
 
   components: {
-    List: List
+    // List: List
   },
 
   data() {
