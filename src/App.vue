@@ -22,7 +22,9 @@
   <router-link to="/list">리스트페이지</router-link>
 
   <!-- <List :blogData="blogData"/> -->
-  <router-view :blogData="blogData"></router-view>
+  <div class="mt-4">
+    <router-view :blogData="blogData"></router-view>
+  </div>
 
 </template>
 
