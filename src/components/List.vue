@@ -10,7 +10,7 @@
   </div>
   <div>
     <h5> {{ blogData[2].title }} </h5>
-    <p> {{ blogData[2].date }} </p>
+    <p> {{ blogData[2].date }} ㅇ</p>
   </div>
 </template>
 
